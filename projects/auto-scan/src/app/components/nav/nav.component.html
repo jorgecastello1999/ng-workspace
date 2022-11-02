@@ -1,1 +1,29 @@
-<p>nav works!</p>
+<div class="nav-general">
+	<div class="nav-routes">
+		<div class="nav operacion" (click)="clickNavBarr()">
+			{{ 'operacion' | translate | uppercase }}
+		</div>
+		<div class="nav estado" (click)="clickNavBarr()">
+			{{ 'estado' | translate | uppercase }}
+		</div>
+		<div class="nav alarmas" (click)="clickNavBarr()">
+			{{ 'alarmas' | translate | uppercase }}
+		</div>
+		<div class="nav mantenimiento" (click)="clickNavBarr()">
+			{{ 'mantenimiento' | translate | uppercase }}
+		</div>
+		<div class="nav configuracion" (click)="clickNavBarr()">
+			{{ 'configuracion' | translate | uppercase }}
+		</div>
+		<div class="nav dashboard" (click)="clickNavBarr()">
+			{{ 'dashboard' | translate | uppercase }}
+		</div>
+		<div class="nav readings" (click)="clickNavBarr()">
+			{{ 'lecturas' | translate | uppercase }}
+		</div>
+	</div>
+	<div class="nav-butons">
+		<div class="btn exit"></div>
+		<div class="btn info"></div>
+	</div>
+</div>

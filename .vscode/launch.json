@@ -3,7 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "ng serve",
+      "command": "npm start joma-truck",
+      "name": "ng start joma-truck",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "ng serve ",
       "type": "pwa-chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",

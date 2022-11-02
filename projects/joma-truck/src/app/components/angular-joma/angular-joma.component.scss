@@ -1,0 +1,52 @@
+ /* general styling */
+ .container-principal {
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   .container-camiones {
+     margin-top: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     .cont-text {
+       justify-content: center;
+       display: flex;
+       align-items: baseline;
+
+       .camiones {
+         font-size: 50px;
+         color: orange;
+       }
+
+       .matriculas-camiones {
+         color: white;
+         font-size: 35px;
+         margin-left: 5px;
+       }
+       .truck{
+         align-self: center;
+       }
+       .btn-cancel-truck {
+
+       }
+       .btn-set-truck{
+
+       }
+     }
+   }
+
+   .container-bottom {
+     background-color: #ddd;
+   }
+   .input-csv {
+    padding-top: 10px;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+
+     }
+ }
+
+

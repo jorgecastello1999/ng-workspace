@@ -34,8 +34,10 @@
             ],
             "styles": [
               "projects/auto-scan/src/styles.scss"
+
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -101,9 +103,16 @@
               "projects/auto-scan/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/auto-scan/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+
+    "node_modules/@popperjs/core/dist/umd/popper.min.js",
+
+    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -117,6 +126,9 @@
         }
       }
     },
+
+
+
     "joma-truck": {
       "projectType": "application",
       "schematics": {
@@ -144,7 +156,10 @@
             "styles": [
               "projects/joma-truck/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+
+
+            ]
           },
           "configurations": {
             "production": {

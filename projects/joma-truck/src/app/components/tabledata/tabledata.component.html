@@ -1,0 +1,59 @@
+<div class="table-container">
+	<div class="zone">
+		<input
+			type="text"
+			class="filter"
+			placeholder="Type to filter the name column..."
+			(keyup)="updateFilter($event)"
+		/>
+
+		<ngx-datatable
+			#table
+			class="material"
+			[rows]="rows"
+			[columnMode]="ColumnMode.force"
+			[columns]="columns"
+			[headerHeight]="50"
+			[footerHeight]="50"
+			rowHeight="auto"
+			[limit]="15"
+			[reorderable]="reorderable"
+			[swapColumns]="swapColumns"
+			[targetMarkerTemplate]="targetMarkerTemplate"
+			[selected]="selected"
+			[selectionType]="SelectionType.single"
+			(activate)="onActivate($event)"
+			(select)="onSelect($event)"
+			><ngx-datatable-column name="Name" [width]="300" class="column"></ngx-datatable-column>
+			<ngx-datatable-column name="Company" [width]="200"></ngx-datatable-column>
+
+			<ngx-datatable-column name="Gender"></ngx-datatable-column>
+
+			<!-- Footer -->
+			<ngx-datatable-footer *ngIf="true">
+				<ng-template
+					ngx-datatable-footer-template
+					let-rowCount="rowCount"
+					let-pageSize="pageSize"
+					let-selectedCount="selectedCount"
+					let-curPage="curPage"
+					let-offset="offset"
+				>
+					<div style="padding: 5px 10px">
+						<hr style="width: 100%" />
+						<div>
+							Rows: {{ rowCount }} | Size: {{ pageSize }} | Current: {{ curPage }} | Offset:
+							{{ offset }}
+						</div>
+					</div>
+				</ng-template>
+			</ngx-datatable-footer>
+		</ngx-datatable>
+		<ng-template #targetMarkerTemplate let-class="class">
+			<div [ngClass]="class">
+				<div class="icon datatable-icon-down"></div>
+				<div class="icon datatable-icon-up"></div>
+			</div>
+		</ng-template>
+	</div>
+</div>

@@ -1,1 +1,27 @@
-<app-web-template> </app-web-template>
+<div class="main-container">
+	<div class="top-container">
+		<div class="top-left">
+			<div class="img-logo"></div>
+		</div>
+		<div class="top-right">
+			<div class="client-logo">
+				<button class="btn-square-orange">Client logo</button>
+			</div>
+			<div class="name-machine-container">
+				<p>{{ 'saludo' | translate | uppercase }}</p>
+			</div>
+			<div class="service-user-status-container">
+				<img class="img-service-status" src="../assets/img/tecnologia.png" alt="Estado servicios" />
+				<img class="img-service-status" src="../assets/img/bdd.png" alt="Estado servicios" />
+				<img class="img-service-status" src="../assets/img/camara.png" alt="Estado servicios" />
+				<button class="btn-square-orange">{{ 'usuario' | translate | uppercase }}</button>
+				<select class="select-idiom" #langSelect (change)="changeLanguage(langSelect.value)">
+					<option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="nav-container">
+		<app-nav></app-nav>
+	</div>
+</div>

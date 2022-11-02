@@ -1,0 +1,15 @@
+{
+  "saludo": "问候语",
+  "usuario": "User",
+  "operacion": "Operation",
+  "estado": "Estate",
+  "alarmas": "Alarms",
+  "mantenimiento": "Maintenance",
+  "configuracion": "settings",
+  "dashboard": "Dashboard",
+  "lecturas": "Readings",
+  "ultimo master codebar" : "Last master codebar read",
+  "codigos_leidos ultimo ciclo": "Codes read last cycle",
+  "peso ultimo palet": "Last pallet weight",
+  "dimensiones ultimo palet": "Last pallet dimensions"
+}

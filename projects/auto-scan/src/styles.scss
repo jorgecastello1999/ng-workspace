@@ -1,1 +1,57 @@
 @import 'reset.css';
+@font-face {
+  font-family: "RobotoFlex-Regular";
+  src: url("assets/fonts/robotoflex-regular.woff2") format("woff2 supports variations"),
+   url("assets/fonts/robotoflex-regular.woff") format("woff"),
+   url("assets/fonts/robotoflex-regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+}
+
+
+:root {
+  font-family: "RobotoFlex-Regular";
+  font-weight: 800;
+	--main-bg-color: #393d4d;
+	--container-darker-color: #464b5e;
+	--container-light-color: #555b73;
+	--container-lighter-color: #5f657d;
+	--btn-line-orange: #ff7700;
+	--btn-line-blue: #5b81eb;
+	--btn-line-blue-darker: #3665e7;
+
+	background-color: var(--main-bg-color);
+  button {
+    height: 50px;
+    width: 90px;
+    margin: 10px;
+  }
+
+  .btn-square-orange {
+    background-color: var(--container-lighter-color);
+    color: white;
+    border: 1px solid #ff7700;
+  }
+
+  .btn-square-orange:hover {
+    box-shadow: 3px 3px 20px black;
+    background-color: #ff7700;
+    cursor: pointer;
+  }
+
+  .btn-rounded-blue {
+    background-color: var(--btn-line-blue);
+    border: none;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .btn-rounded-blue:hover {
+    box-shadow: 5px 5px 20px black;
+    background-color: var(--btn-line-blue-darker);
+    cursor: pointer;
+  }
+
+}
+

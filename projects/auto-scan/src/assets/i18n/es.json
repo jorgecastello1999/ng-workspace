@@ -1,0 +1,14 @@
+{
+  "usuario": "Usuario",
+    "operacion": "Operación",
+    "estado": "Estado",
+    "Alarmas": "Alarmas",
+    "mantenimiento": "Mantenimiento",
+    "configuracion": "configuración",
+    "dashboard": "Dashboard",
+    "lecturas": "Lecturas",
+  "ultimo master codebar" : "Ultimo master codebar leído",
+  "codigos leidos ultimo ciclo": "Codigos leidos último ciclo",
+  "peso ultimo palet": "Peso último palet",
+  "dimensiones ultimo palet": "Dimensiones último palet"
+}

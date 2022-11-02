@@ -5,6 +5,4 @@ import { NgModule } from '@angular/core';
 	declarations: [],
 	imports: [CommonModule],
 })
-export class WebTemplateModule {
-	a = 'jorhe';
-}
+export class SharedModule {}

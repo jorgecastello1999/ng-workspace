@@ -58,20 +58,39 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```
 
 ## Add a .prettierrc config and .prettierignore
-```
-{
+```{
   "arrowPares":"always",
   "bracketSpacing":true,
   "insertPragma": false,
-  "printWidth": 80,
+  "printWidth": 100,
   "quoteProps": "as-needed",
   "semi": true,
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "es5",
   "useTabs": true,
-  "endOfLine": "auto"
-  }
+  "endOfLine": "auto",
+  "prettier.cssEnable": [
+    "css",
+    "less",
+    "sass"
+  ],
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser":"html"
+      }
+    },
+    {
+      "files": "*.component.html",
+      "options": {
+        "parser":"angular"
+      }
+    }
+  ]
+}
+
   ```
 ```
 node_modules/*

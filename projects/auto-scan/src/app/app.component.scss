@@ -1,0 +1,65 @@
+.main-container {
+  height: 100%;
+  .top-container {
+    display: flex;
+    position: relative;
+    .top-left {
+      min-width: 200px;
+      border-bottom: 1px solid var(--btn-line-blue);
+      max-height: 100px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      position: relative;
+      left: 0px;
+      border-right: 1px solid var(--btn-line-orange);
+
+      .img-logo {
+        padding: 5px;
+        width: 200px;
+        min-height: 80px;
+        background-image: url("../assets/img/lm_logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .top-right{
+      border-bottom: 1px solid var(--btn-line-blue);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .client-logo{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .name-machine-container{
+        font-size: 35px;
+
+        color: white;
+      }
+      .service-user-status-container{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        right: 0px;
+          .img-service-status{
+          max-width: 30px;
+          margin: 0 1px 0 1px;
+          cursor: pointer;
+        }
+        .select-idiom{
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .nav-container{
+    height: 90%;
+    max-width: 200px;
+    border-right: 1px solid var(--btn-line-orange);
+  }
+}
