@@ -11,11 +11,29 @@
 				<p>{{ 'saludo' | translate | uppercase }}</p>
 			</div>
 			<div class="service-user-status-container">
-				<img class="img-service-status" src="../assets/img/tecnologia.png" alt="Estado servicios" />
-				<img class="img-service-status" src="../assets/img/bdd.png" alt="Estado servicios" />
-				<img class="img-service-status" src="../assets/img/camara.png" alt="Estado servicios" />
-				<button class="btn-square-orange">{{ 'usuario' | translate | uppercase }}</button>
-				<select class="select-idiom" #langSelect (change)="changeLanguage(langSelect.value)">
+				<img
+					class="img-service-status"
+					src="../assets/img/tecnologia.png"
+					alt="Estado servicios"
+				/>
+				<img
+					class="img-service-status"
+					src="../assets/img/bdd.png"
+					alt="Estado servicios"
+				/>
+				<img
+					class="img-service-status"
+					src="../assets/img/camara.png"
+					alt="Estado servicios"
+				/>
+				<button class="btn-square-orange">
+					{{ 'usuario' | translate | uppercase }}
+				</button>
+				<select
+					class="select-idiom"
+					#langSelect
+					(change)="changeLanguage(langSelect.value)"
+				>
 					<option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
 				</select>
 			</div>

@@ -1,14 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Camion } from '../../models/camion.model';
+import { Truck } from '../../models/truck.model';
+
 @Injectable({
 	providedIn: 'root',
 })
-export class CamionService {
+export class TruckService {
 	constructor(private http: HttpClient) {}
 
-	getCamion(camion: Camion) {
-		return camion;
+	getCamion(truck: Truck) {
+		return truck;
 	}
 
 	/*

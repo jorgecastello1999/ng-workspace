@@ -1,22 +1,18 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CamionService } from './camion.service';
+import { CamionService } from './truck.service';
 
 describe('CamionService', () => {
-  let service: CamionService;
+	let service: CamionService;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(CamionService);
-  });
+	beforeEach(() => {
+		TestBed.configureTestingModule({});
+		service = TestBed.inject(CamionService);
+	});
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
+	it('should be created', () => {
+		expect(service).toBeTruthy();
+	});
 
-  it('Obtain truck', ()=>{
-
-  })
-
+	it('Obtain truck', () => {});
 });
-

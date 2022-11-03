@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { CamionService } from './services/camion/camion.service';
+import { CamionService } from './services/camion/truck.service';
 @Component({
 	selector: 'app-angular-joma',
 	templateUrl: './angular-joma.component.html',
