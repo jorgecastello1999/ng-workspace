@@ -7,5 +7,6 @@ import { FiledropComponent } from './filedrop.component';
 @NgModule({
 	declarations: [FiledropComponent],
 	imports: [CommonModule, NgxFileDropModule, BrowserModule],
+	exports: [FiledropComponent],
 })
 export class FiledropModule {}

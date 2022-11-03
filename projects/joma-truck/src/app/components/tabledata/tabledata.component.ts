@@ -1,5 +1,17 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { ColumnMode, DatatableComponent, SelectionType } from '@swimlane/ngx-datatable';
+/* eslint-disable prettier/prettier */
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild
+} from '@angular/core';
+import {
+  ColumnMode,
+  DatatableComponent,
+  SelectionType
+} from '@swimlane/ngx-datatable';
 
 @Component({
 	selector: 'app-tabledata',

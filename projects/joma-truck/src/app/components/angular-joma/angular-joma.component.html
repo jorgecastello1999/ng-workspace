@@ -5,14 +5,21 @@
 
 			<p class="matriculas-camiones">{{ hueco }}</p>
 
-			<button class="btn-cancel truck btn-rounded-blue" (click)="cancelTruck()">Cancel</button>
-			<button class="btn-set truck btn-rounded-blue" (click)="setTruck()">Set</button>
+			<button class="btn-cancel truck btn-rounded-blue" (click)="cancelTruck()">
+				Cancel
+			</button>
+			<button class="btn-set truck btn-rounded-blue" (click)="setTruck()">
+				Set
+			</button>
 			<div class="input-csv">
-				<input class="control" type="file" accept=".csv, .json" (change)="onChangeFile($event)" />
+				<app-filedrop></app-filedrop>
 			</div>
 		</div>
 	</div>
 	<div class="container-bottom">
-		<app-tabledata (selection)="addSelection($event)" [file]="file"></app-tabledata>
+		<app-tabledata
+			(selection)="addSelection($event)"
+			[file]="file"
+		></app-tabledata>
 	</div>
 </div>
