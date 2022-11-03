@@ -1,0 +1,49 @@
+<div class="container">
+	<div class="left-container container-model">
+		<div class="title">
+			{{ 'datos de produccion' | translate | uppercase }}
+		</div>
+		<div class="info-container">
+			<div class="packager">
+				<div class="package">
+					<div class="text-l">{{ 'ultimo master codebar' | translate | uppercase }}</div>
+					<div class="text-l"></div>
+				</div>
+				<div class="package">
+					<div class="text-l">{{ 'codigos leidos ultimo ciclo' | translate | uppercase }}</div>
+					<div class="text-l"></div>
+				</div>
+				<div class="package">
+					<div class="text-l">{{ 'peso ultimo palet' | translate | uppercase }}</div>
+					<div class="text-l"></div>
+				</div>
+				<div class="package">
+					<div class="text-l">{{ 'dimensiones ultimo palet' | translate | uppercase }}</div>
+					<div class="text-l"></div>
+				</div>
+			</div>
+
+			<div class="chart"></div>
+			<div class="prescriptions">
+				{{ 'recetas' | translate | uppercase }}
+				<div class="image"></div>
+			</div>
+		</div>
+	</div>
+	<div class="rigth-container">
+		<div class="state-machine-cont">
+			<div class="title">{{ 'estado maquina' | translate | uppercase }}</div>
+			<div class="container-state bot">
+				<div class="text-r">{{ 'operacion en pausa' | translate | uppercase }}</div>
+				<div class="text-r">Receta?</div>
+			</div>
+		</div>
+		<div class="cicle">
+			<div class="title">{{ 'ciclo' | translate | uppercase }}</div>
+			<div class="buttons">
+				<button class="btn-rounded-blue bt">{{ 'start' | translate | uppercase }}</button>
+				<button class="btn-rounded-blue bt">{{ 'stop' | translate | uppercase }}</button>
+			</div>
+		</div>
+	</div>
+</div>

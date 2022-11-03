@@ -1,4 +1,4 @@
-export class Camion {
+export interface Camion {
 	id?: string;
 	matricula?: string;
 	totalBox?: Number;

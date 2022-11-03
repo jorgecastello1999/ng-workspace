@@ -1,0 +1,59 @@
+<div class="container">
+	<div class="cont-left">
+		<div class="title">
+			{{ 'sinoptico de maquina' | translate | uppercase }}
+		</div>
+		<div class="info-container">
+			<div class="sinoptic-machine"></div>
+		</div>
+	</div>
+	<div class="cont-rigth">
+		<div class="estate">
+			<div class="title">{{ 'estado maquina' | translate | uppercase }}</div>
+			<div class="cont">
+				<div class="coloc">{{ 'operativa' | translate | uppercase }}</div>
+			</div>
+		</div>
+		<div class="service-state">
+			<div class="title">{{ 'estado servicios' | translate | uppercase }}</div>
+			<div class="packager">
+				<div class="package">
+					{{ 'base de datos' | translate | uppercase }}
+					<div class="conect-cont">
+						<img
+							class="imagen"
+							src="../../../assets/img/avance-rapido.png"
+							alt=""
+						/>
+						<p class="parraf">Conectada</p>
+					</div>
+				</div>
+				<div class="package">
+					PLC
+					<div class="conect-cont">
+						<img
+							class="imagen"
+							src="../../../assets/img/avance-rapido.png"
+							alt=""
+						/>
+						<p class="parraf">Conectada</p>
+					</div>
+				</div>
+				<div class="package">
+					{{ 'camaras' | translate | uppercase }}
+					<div class="conect-cont">
+						<img
+							(click)="cameras()"
+							class="imagen"
+							src="../../../assets/img/avance-rapido.png"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="cameras" *ngIf="butonCameras">
+					<!-- <div class="cameranumber" *ngFor="let camera of cameras"></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

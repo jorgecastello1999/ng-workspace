@@ -34,19 +34,20 @@
        .btn-set-truck{
 
        }
+       .input-csv {
+        align-self: center;
+        color: rgb(255, 255, 255);
+        display: flex;
+        .control{
+
+        }
+       }
      }
    }
 
    .container-bottom {
-     background-color: #ddd;
    }
-   .input-csv {
-    padding-top: 10px;
-       justify-content: center;
-       align-items: center;
-       display: flex;
 
-     }
  }
 
 

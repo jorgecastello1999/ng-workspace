@@ -1,0 +1,61 @@
+<nav>
+	<ul class="nav-routes">
+		<li
+			class="nav"
+			routerLink="/operation"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+		>
+			<img src="" alt="" />{{ 'operacion' | translate | uppercase }}
+		</li>
+		<li class="nav" routerLink="/state" routerLinkActive="active">
+			{{ 'estado' | translate | uppercase }}
+		</li>
+		<li class="nav" routerLink="/alarms" routerLinkActive="active">
+			{{ 'alarmas' | translate | uppercase }}
+		</li>
+		<li
+			class="nav"
+			routerLink="/manteinance"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+		>
+			{{ 'mantenimiento' | translate | uppercase }}
+		</li>
+		<li
+			class="nav"
+			routerLink="/configuration"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+		>
+			{{ 'configuracion' | translate | uppercase }}
+		</li>
+		<li
+			class="nav"
+			routerLink="/dashboard"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+		>
+			{{ 'dashboard' | translate | uppercase }}
+		</li>
+		<li
+			class="nav"
+			routerLink="/readings"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+		>
+			<img class="img" src="../../../assets/img/bdd.png" alt="" />{{
+				'lecturas' | translate | uppercase
+			}}
+		</li>
+	</ul>
+	<div class="nav-butons">
+		<div class="btn exit"></div>
+		<div
+			class="btn info"
+			routerLink="/info"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+		></div>
+	</div>
+</nav>

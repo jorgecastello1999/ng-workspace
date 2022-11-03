@@ -3,17 +3,16 @@
 		<div class="cont-text">
 			<p class="camiones">Camión:</p>
 
-			<p class="matriculas-camiones">13515125</p>
+			<p class="matriculas-camiones">{{ hueco }}</p>
 
-			<button class="btn-cancel truck btn-rounded-blue">Cancel</button>
-			<button class="btn-set truck btn-rounded-blue">Set</button>
+			<button class="btn-cancel truck btn-rounded-blue" (click)="cancelTruck()">Cancel</button>
+			<button class="btn-set truck btn-rounded-blue" (click)="setTruck()">Set</button>
+			<div class="input-csv">
+				<input class="control" type="file" accept=".csv, .json" (change)="onChangeFile($event)" />
+			</div>
 		</div>
 	</div>
 	<div class="container-bottom">
-		<app-tabledata></app-tabledata>
-	</div>
-	<div class="input-csv">
-		<label class="" for="file_input">Upload file</label>
-		<input class="control" type="file" file-reader="fileContent" accept=".csv, .json" />
+		<app-tabledata (selection)="addSelection($event)" [file]="file"></app-tabledata>
 	</div>
 </div>

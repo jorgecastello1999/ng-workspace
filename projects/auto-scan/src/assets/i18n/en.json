@@ -8,8 +8,15 @@
   "configuracion": "settings",
   "dashboard": "Dashboard",
   "lecturas": "Readings",
+  "datos de produccion": "Production data",
   "ultimo master codebar" : "Last master codebar read",
-  "codigos_leidos ultimo ciclo": "Codes read last cycle",
+  "codigos leidos ultimo ciclo": "Codes read last cycle",
   "peso ultimo palet": "Last pallet weight",
-  "dimensiones ultimo palet": "Last pallet dimensions"
+  "dimensiones ultimo palet": "Last pallet dimensions",
+  "Lecturas correctas ultimas 24h": "Correct readings last 24h",
+  "lecturas erroneas": "erroneous readings",
+  "otros": "otros",
+  "estado maquina":"Machine state",
+  "operacion en pausa": "Paused operation",
+  "ciclo": "cycle"
 }

@@ -2,7 +2,7 @@
   "arrowPares":"always",
   "bracketSpacing":true,
   "insertPragma": false,
-  "printWidth": 100,
+  "printWidth": 80,
   "quoteProps": "as-needed",
   "semi": true,
   "singleQuote": true,
