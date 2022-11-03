@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { CamionService } from './services/camion/truck.service';
+import { TruckService } from './services/camion/truck.service';
 @Component({
 	selector: 'app-angular-joma',
 	templateUrl: './angular-joma.component.html',
@@ -13,7 +13,7 @@ export class AngularJomaComponent implements OnInit {
 	hueco: string = 'Matricula';
 	data: any;
 	file: any;
-	constructor(private camionService: CamionService, private http: HttpClient) {}
+	constructor(private truckService: TruckService, private http: HttpClient) {}
 
 	ngOnInit(): void {
 		console.log('init');
